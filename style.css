@@ -1,0 +1,403 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2B547E;
+}
+.dakdam{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dakdam-item{
+    width: 1280px;
+}
+
+.head .head-menu{
+  position: sticky!important;
+  z-index: 100;
+}
+/* Search */
+.search-box:hover .search-txt {
+  width: 250px;
+  padding: 0 20px;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0px;
+  color: #fff;
+  transition: 0.5s;
+  font-size: 12px;
+  width: 0;
+}
+
+.search-btn {
+  color: #1abc9c;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+/* carded */
+.body .carded-image {
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* carrd */
+.cards {
+    --spacing: 25px;
+    --columns: 4;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+  }
+  /* @media screen and (max-width: 1023px) {
+    .cards {
+      --columns: 2;
+    }
+  } */
+  /* @media screen and (max-width: 767px) {
+    .cards {
+      --spacing: 15px;
+      --columns: 1;
+    }
+  } */
+  
+  .card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+  .card-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px){
+    .dakdam{
+      overflow: hidden;
+    }
+    /* head */
+    .head .head-menu{
+      display: none;
+    }
+    .head .close-button{
+      display: block;
+    }
+    .head .app-link{
+      display: none!important;
+    }
+    .head .app-link2{
+      display: block;
+    }
+    .head .logo{
+      margin: 10px;
+    }
+    .head .logo-image{
+      width: 100px;
+    }
+    .head .app-image{
+      width: 100px;
+    }
+    /* body */
+    .body .body-content{
+      width: 100%;
+    }
+    /* item1 */
+    .body .body-item1{
+      padding: 10px;
+    }
+    .body .item1-text{
+      font-size: 25px;
+    }
+    /* item2 */
+    .body .body-item2{
+      padding: 10px;
+    }
+    /* item3 */
+    .body .carded{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .body .card-item1,
+    .body .card-item2,
+    .body .card-item3,
+    .body .card-item4{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* tinmoi */
+    .body .tinmoi-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .body .tinmoi-item{
+      width: 100%;
+    }
+    /* card */
+    .body .cards{
+      padding: 0 10px;
+      --spacing: 15px;
+      --columns: 2;
+    }
+    .body .card-image {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    /* item4 */
+    .body .huongdan{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .body .huongdan-item{
+      width: 100%;
+      margin: 15px;
+    }
+    /* footer */
+    .footer{
+      display: flex;
+      flex-direction: column!important;
+    }
+    .footer .footer-content{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px){
+    .dakdam{
+      overflow: hidden;
+    }
+    /* head */
+    .head .head-menu{
+      display: none;
+    }
+    .head .close-button{
+      display: block;
+    }
+    .head .app-link{
+      display: none!important;
+    }
+
+    .head .logo{
+      margin: 10px;
+    }
+    .head .logo-image{
+      width: 100px;
+    }
+    .head .app-image{
+      width: 100px;
+    }
+    /* body */
+    /* .body .body-content{
+      width: 100%;
+    } */
+    /* item1 */
+    .body .body-item1{
+      padding: 10px;
+    }
+    .body .item1-text{
+      font-size: 25px;
+    }
+    /* item2 */
+    .body .body-item2{
+      padding: 10px;
+    }
+    /* item3 */
+    .body .carded{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .body .card-item1,
+    .body .card-item2,
+    .body .card-item3,
+    .body .card-item4{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* tinmoi */
+    .body .tinmoi-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .body .tinmoi-item{
+      width: 100%;
+    }
+    /* card */
+    .body .cards{
+      padding: 0 10px;
+      --spacing: 15px;
+      --columns: 3;
+    }
+    .body .card-image {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    /* item4 */
+    .body .huongdan{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .body .huongdan-item{
+      width: 250px;
+      margin: 15px;
+    }
+    /* footer */
+    .footer{
+      display: flex;
+      flex-direction: column!important;
+    }
+    .footer .footer-content{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1025px){
+    .dakdam{
+      overflow: hidden;
+    }
+    /* head */
+    .head .head-menu{
+      display: none;
+    }
+    .head .close-button{
+      display: block;
+    }
+    .head .app-link{
+      display: none!important;
+    }
+
+    .head .logo{
+      margin: 10px;
+    }
+    .head .logo-image{
+      width: 100px;
+    }
+    .head .app-image{
+      width: 100px;
+    }
+    /* body */
+    /* .body .body-content{
+      width: 100%;
+    } */
+    /* item1 */
+    .body .body-item1{
+      padding: 10px;
+    }
+    .body .item1-text{
+      font-size: 25px;
+    }
+    /* item2 */
+    .body .body-item2{
+      padding: 10px;
+    }
+    /* item3 */
+    .body .carded{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .body .card-item1,
+    .body .card-item2,
+    .body .card-item3,
+    .body .card-item4{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* tinmoi */
+    .body .tinmoi-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .body .tinmoi-item{
+      width: 100%;
+    }
+    /* card */
+    .body .cards{
+      padding: 0 10px;
+      --spacing: 15px;
+      --columns: 3;
+    }
+    .body .card-image {
+      height: 150px;
+      width: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    /* item4 */
+    .body .huongdan{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .body .huongdan-item{
+      width: 250px;
+      margin: 15px;
+    }
+    /* footer */
+    /* .footer{
+      display: flex;
+      flex-direction: column!important;
+    }
+    .footer .footer-content{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px;
+      margin: 0;
+    } */
+  }
